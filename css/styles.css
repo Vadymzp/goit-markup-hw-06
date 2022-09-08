@@ -421,7 +421,6 @@ img {
 }
 
 .client-item {
-  
   width: 170px;
   height: 92px;
 }
@@ -439,7 +438,7 @@ img {
 
 .client-link:hover,
 .client-link:focus {
-border-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* футер */
@@ -566,6 +565,33 @@ border-color: var(--accent-color);
   color: var(--secondary-color);
   margin-bottom: 20px;
   font-weight: 700;
+}
+
+.btn-email {
+  display: flex;
+  justify-content: center;
+  right: 0;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--secondary-color);
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+.icon-close {
+  padding: 0;
+}
+.text-send {
+  color: var(--secondary-color);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.container-send {
+  display: flex;
 }
 
 /* Портфоліо */
