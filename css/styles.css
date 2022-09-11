@@ -456,6 +456,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  
 }
 
 .footer {
@@ -586,12 +587,51 @@ img {
 }
 .text-send {
   color: var(--secondary-color);
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+ margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.33;
+    text-transform: uppercase;
 }
-.container-send {
+.form-for-input {
   display: flex;
+  margin-left: auto;
+}
+.footer-form {
+margin-left: auto;
+}
+.subcription-email {
+  display: inline-flex;
+    background-color: #2f303a;
+    margin-right: 12px;
+    padding-left: 12px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.25;
+}
+.btn-email {
+  display: inline-flex;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 4px;
+    border: var(--accent-color);
+    cursor: pointer;
+    transition: background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func), border-radius var(--transition-dur-and-func);
 }
 
 /* Портфоліо */
@@ -712,7 +752,24 @@ img {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
+  cursor: pointer;
+  transition: var(--o-transition-dur-and-funk);
 }
+
+.modal-close:hover
+.modal-close:hover {
+  border-color: var(--accent-color);
+}
+
+.close-icon {
+  transition: var(--o-transition-dur-and-funk);
+}
+
+.close-icon:hover {
+  fill: var(--accent-color);
+}
+
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -737,8 +794,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 528px;
-  width: 581px;
+  height: 581px;
+  width: 528px;
   background-color: rgba(255, 255, 255, 1);
   padding: 40px 39px;
 }
@@ -753,10 +810,12 @@ img {
   text-align: center;
   color: var(--secondary-text-color);
 }
+
 .modal-form {
   display: flex;
   flex-direction: column;
 }
+
 .modal-form-input {
   width: 100%;
   height: 40px;
@@ -765,7 +824,9 @@ img {
   padding-left: 42px;
   transition: border-color var(--o-transition-dur-and-funk);
 }
+
 .modal-form-field-desc {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -773,13 +834,16 @@ img {
   display: block;
   margin-bottom: 4px;
 }
+
 .modal-form-field {
   margin-bottom: 10px;
 }
+
 .modal-form-input-wrapper {
   display: block;
   position: relative;
 }
+
 .modal-form-icon {
   position: absolute;
   left: 12px;
@@ -787,13 +851,16 @@ img {
   transform: translateY(-50%);
   transition: fill var(--o-transition-dur-and-funk);
 }
+
 .modal-form-input:focus + .modal-form-icon {
   fill: var(--accent-color);
 }
+
 .modal-form-input:focus {
   border-color: var(--accent-color);
   outline: none;
 }
+
 .modal-form-message {
   width: 100%;
   height: 138px;
@@ -803,29 +870,72 @@ img {
   resize: none;
   transition: border-color var(--o-transition-dur-and-funk);
 }
+
 .modal-form-message:focus {
   border-color: var(--accent-color);
   outline: none;
 }
+
 .modal-form-message::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
+
+.modal-form-check-field {
+display: flex;
+ align-items: center;
+ margin-bottom: 30px;
+font-weight: 400;
+line-height: 1.71;
+color: var(--text-color);
+}
+
 .modal-form-own-checkbox {
   border: 1px solid #212121;
   border-radius: 3px;
   cursor: pointer;
   fill: var(--secondary-color);
+  margin-right: 8px;
 }
+
 .modal-form-own-checkbox-icon {
   display: none;
 }
+
 .modal-form-check:checked + .modal-form-own-checkbox {
   background-color: var(--accent-color);
 }
+
 .modal-form-check:checked
   + .modal-form-own-checkbox
   .modal-form-own-checkbox-icon {
   display: block;
 }
-.modal-form-check:focus + .modal-form-own-checkbox {
+
+.modal-form-check {
+  appearance: none;
+  position: absolute;
+}
+
+.modal-form-submit {
+  color: var(--primary-text-color);
+  align-self: center;
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  min-width: 200px;
+  align-items: center;
+  border: none;
+  height: 50px;
+  border-radius: 4px;
+  transition: background-color var(--o-transition-dur-and-funk);
+  outline: none;
+}
+
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+  background-color: var(--button-color);
+}
 }
