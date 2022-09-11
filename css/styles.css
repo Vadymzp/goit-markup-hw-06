@@ -590,7 +590,8 @@ margin-left: auto;
 .subcription-email {
   display: inline-flex;
     background-color: #2f303a;
-   padding: 12px;
+   padding-left: 12px;
+  margin-right: 12px;
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -610,9 +611,9 @@ margin-left: auto;
 .btn-email {
   display: inline-flex;
     width: 200px;
-    height: 50px;
     margin-left: auto;
     margin-right: auto;
+    height: 50px;
     background-color: var(--accent-color);
     color: var(--secondary-color);
     align-items: center;
@@ -626,6 +627,10 @@ margin-left: auto;
     cursor: pointer;
     transition: var(--o-transition-dur-and-funk);
 }
+.icon-send {
+  margin-left: 10px;
+}
+
 .btn-email:focus,
 .btn-email:hover {
 background-color: var(--button-color);
