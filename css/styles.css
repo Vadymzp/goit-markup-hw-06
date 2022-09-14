@@ -844,6 +844,7 @@ background-color: var(--button-color);
 .modal-form-field {
   margin-bottom: 10px;
 }
+
 .modal-form-field-message {
   margin-bottom: 20px;
 }
@@ -907,6 +908,7 @@ color: var(--text-color);
   fill: var(--secondary-color);
   margin-right: 8px;
 }
+
 .modal-form-check:focus + .modal-form-own-checkbox
  {
 border-color: var(--accent-color);
@@ -920,10 +922,12 @@ border-color: var(--accent-color);
 .modal-form-check:checked + .modal-form-own-checkbox {
   background-color: var(--accent-color);
 }
+
 .policy-link {
   color: var(--accent-color);
   transition: var(--o-transition-dur-and-funk);
 }
+
 .policy-link:hover,
 .policy-link:focus {
   color: var(--accent-color);
